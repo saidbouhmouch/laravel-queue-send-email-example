@@ -1,0 +1,7 @@
+apps:
+  # Run php artisan queue:listen to execute queue job
+    script    : 'artisan'
+    name      : 'artisan-queue-listen'
+    cwd       : './'
+    args      : 'queue:listen' # or queue:work
+    interpreter : 'php'
